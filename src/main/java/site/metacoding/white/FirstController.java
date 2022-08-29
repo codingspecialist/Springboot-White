@@ -29,6 +29,7 @@ public class FirstController {
 	public String putData() {
 		return "<h1>update data</h1>";
 	}
+
 	
 	@DeleteMapping("/first")
 	public String deleteData() {
