@@ -22,11 +22,9 @@ public class ParseTest {
 		String content = p1[1].split("=")[1];
 				
 		Third third = new Third();
-		third.setId(id);
 		third.setTitle(title);
 		third.setContent(content);
 		
-		System.out.println(third.getId());
 		System.out.println(third.getTitle());
 		System.out.println(third.getContent());
 	}

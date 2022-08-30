@@ -16,7 +16,7 @@ public class ThirdController {
 
 	@PostMapping("/third")
 	public String postData(Third third) {
-		return "id : "+third.getId()+", title : "+third.getTitle()+", content : "+third.getContent();
+		return ", title : "+third.getTitle()+", content : "+third.getContent();
 	}
 	
 	// UPDATE third SET title = ?, content = ? WHERE id = ?
@@ -27,7 +27,7 @@ public class ThirdController {
 	
 	@PutMapping("/third/{id}/json")
 	public String putJsonData(@PathVariable Integer id, @RequestBody Third third) {
-		return third.toString();
+		return third.toString()+" 주소로 받은거 : "+id;
 	}
 }
 
